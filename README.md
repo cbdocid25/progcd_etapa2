@@ -76,9 +76,11 @@ nome_do_projeto/
 
 ```python
 DATASET_PATH = "model/dataset/relatorio_treinamento.csv"
+```
 
 ## Fonte do dataset original:
 🔗 [Click aqui para acessar o dataset no Kaggle](https://www.kaggle.com/code/gpreda/credit-card-fraud-detection-predictive-models)
+
 
 ## Tecnologias e Ferramentas
 
