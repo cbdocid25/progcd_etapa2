@@ -25,13 +25,17 @@ O projeto é composto por três arquivos principais:
 ## Executando a Aplicação
 
 Certifique-se de que todas as dependências estão instaladas (ver seção abaixo).
-No terminal, execute o seguinte comando: python main.py
+No terminal, execute o seguinte comando:
+
+```bash
+python main.py
+```
 
 A aplicação será iniciada.
 Você poderá fazer perguntas como:
-"Quantas transações fraudulentas existem no dataset?"
-"Qual foi o maior valor entre as fraudes?"
-"Crie um gráfico de dispersão entre fraudes e operações legítimas e atribua as cores azul para legítima e laranja para as fraudes"
+- "Quantas transações fraudulentas existem no dataset?"
+- "Qual foi o maior valor entre as fraudes?"
+- "Crie um gráfico de dispersão entre fraudes e operações legítimas e atribua as cores azul para legítima e laranja para as fraudes"
 
 O sistema interpretará a pergunta e apresentará a resposta com base no dataset de fraude de cartões de crédito.
 
