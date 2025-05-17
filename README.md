@@ -1,18 +1,62 @@
-# 🛡️ Detecção de Fraudes em Cartões de Crédito com LLM (RAG)
+# Detecção de Fraudes em Cartões de Crédito com LLM (RAG)
 
 Este projeto integra técnicas de aprendizado de máquina e modelos de linguagem (LLMs) com a abordagem RAG (Retrieval-Augmented Generation) para detecção e explicação de fraudes em cartões de crédito.
 
-## 📌 Objetivo
+## Objetivo
 
-Desenvolver uma solução capaz de identificar transações fraudulentas e, ao mesmo tempo, explicar em linguagem natural as decisões do modelo, utilizando uma LLM integrada via LangChain e FAISS.
+Desenvolver uma solução capaz de identificar transações fraudulentas e, ao mesmo tempo, explicar em linguagem natural as decisões do modelo, utilizando uma LLM integrada via LangChain.
 
-## 📊 Dataset
+## Como Executar o Aplicativo de Interação com LLM
+
+Este projeto permite a interação com um modelo de linguagem (LLM) para análise de fraudes em transações de cartão de crédito. Ele foi desenvolvido com o objetivo de tornar a exploração de dados mais intuitiva, através de perguntas em linguagem natural.
+
+---
+
+## Estrutura Principal
+
+O projeto é composto por três arquivos principais:
+
+- `helper.py`: contém funções auxiliares para tratamento de dados e formatação de respostas.  
+- `engine.py`: orquestra a lógica de consulta, integração com a LLM e formatação dos resultados.  
+- `main.py`: ponto de entrada da aplicação. Ao ser executado, inicia a interface e permite interação com o modelo.
+
+---
+
+## Executando a Aplicação
+
+Certifique-se de que todas as dependências estão instaladas (ver seção abaixo).
+No terminal, execute o seguinte comando: python main.py
+
+A aplicação será iniciada.
+Você poderá fazer perguntas como:
+"Quantas transações fraudulentas existem no dataset?"
+"Qual foi o maior valor entre as fraudes?"
+"Crie um gráfico de dispersão entre fraudes e operações legítimas e atribua as cores azul para legítima e laranja para as fraudes"
+
+O sistema interpretará a pergunta e apresentará a resposta com base no dataset de fraude de cartões de crédito.
+
+## Requisitos
+
+Antes de rodar, instale as dependências com:
+```bash
+pip install -r requirements.txt
+```
+
+Se estiver utilizando ambiente virtual (recomendado), ative-o antes de executar o comando acima.
+
+---
+
+## Observação
+Este projeto utiliza uma arquitetura modular com suporte a agentes LLM, oferecendo uma camada inteligente sobre os dados para facilitar análises sem necessidade de escrever código ou queries complexas.
+
+
+## Dataset
 
 - Fonte: [Kaggle - Credit Card Fraud Detection](https://www.kaggle.com/code/gpreda/credit-card-fraud-detection-predictive-models)
 - Contém 284.807 transações no total, das quais apenas 492 são fraudes (0,17%).
 - Todas as variáveis (exceto 'Time' e 'Amount') são resultados de PCA para anonimização.
 
-## 🛠️ Tecnologias e Ferramentas
+## Tecnologias e Ferramentas
 
 - Python 3.10+
 - Jupyter Notebook
@@ -22,7 +66,7 @@ Desenvolver uma solução capaz de identificar transações fraudulentas e, ao m
 - LangChain (para integração com LLM)
 - OpenAI API (ou outra LLM compatível)
 
-## 🧠 Abordagem
+## Abordagem
 
 1. Pré-processamento do dataset.
 2. Treinamento de modelos de detecção (baseline).
@@ -31,7 +75,7 @@ Desenvolver uma solução capaz de identificar transações fraudulentas e, ao m
 5. Integração com LangChain para geração de explicações usando LLM.
 6. Comparação dos modelos com e sem auxílio da LLM.
 
-## 👥 Equipe
+## Equipe
 
 - Alexandre Teixeira da Silva
 - César Braz de Oliveira
