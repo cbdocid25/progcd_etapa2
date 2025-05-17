@@ -56,9 +56,29 @@ Este projeto utiliza uma arquitetura modular com suporte a agentes LLM, oferecen
 
 ## Dataset
 
-- Fonte: [Kaggle - Credit Card Fraud Detection](https://www.kaggle.com/code/gpreda/credit-card-fraud-detection-predictive-models)
-- Contém 284.807 transações no total, das quais apenas 492 são fraudes (0,17%).
-- Todas as variáveis (exceto 'Time' e 'Amount') são resultados de PCA para anonimização.
+O dataset utilizado neste projeto é baseado no conjunto de dados original do Kaggle sobre detecção de fraudes em cartões de crédito. Este arquivo foi **manipulado e enriquecido** com os julgamentos de **três modelos de aprendizado supervisionado** (Regressão Logística, Random Forest e XGBoost), resultando em colunas adicionais com as predições de cada modelo.
+
+Devido ao seu tamanho final (153.9MB), ele não pôde ser hospedado diretamente neste repositório GitHub.
+Você pode baixá-lo através do link abaixo:
+
+🔗 [Clique aqui para acessar o dataset no Google Drive](https://drive.google.com/drive/folders/1Gp9VLrw08iapNNpInsbsl6o9w46Jb9bT?usp=drive_link)
+
+Após o download, adicione o arquivo na seguinte estrutura de diretório dentro do projeto:
+
+```
+nome_do_projeto/
+└── model/
+    └── dataset/
+        └── relatorio_treinamento.csv
+```
+
+> **Importante:** o caminho acima deve ser seguido exatamente para garantir o funcionamento do sistema, conforme definido na variável:
+
+```python
+DATASET_PATH = "model/dataset/relatorio_treinamento.csv"
+
+## Fonte do dataset original:
+🔗 [Click aqui para acessar o dataset no Kaggle](https://www.kaggle.com/code/gpreda/credit-card-fraud-detection-predictive-models)
 
 ## Tecnologias e Ferramentas
 
