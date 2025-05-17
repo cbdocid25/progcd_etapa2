@@ -1,4 +1,4 @@
-# Detecção de Fraudes em Cartões de Crédito com LLM (RAG)
+# Detecção de Fraudes em Cartões de Crédito com LLM
 
 Este projeto integra técnicas de aprendizado de máquina e modelos de linguagem (LLMs) com a abordagem RAG (Retrieval-Augmented Generation) para detecção e explicação de fraudes em cartões de crédito.
 
